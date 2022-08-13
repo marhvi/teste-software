@@ -18,7 +18,7 @@ public class ToDoController {
     }
 
     @GetMapping("/todos")
-    ResponseEntity<List<ToDo>> getAllTodos() {
+     ResponseEntity<List<ToDo>> getAllTodos() {
         return new ResponseEntity<>(service.findAll(), HttpStatus.OK);
     }
 
